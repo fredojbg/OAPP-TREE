@@ -1,0 +1,278 @@
+/*Tipos de letras con Google Fonts*/
+
+@import 'https://fonts.googleapis.com/css?family=Baloo+Bhai';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab';
+
+/* Funciones de letras y Tipos de Colores.
+
+font-family: 'Baloo Bhai';
+font-family: 'Roboto Slab', serif;
+
+
+EMERALD: #2ecc71;
+TURQUOISE: #1abc9c;
+GREEM SEA: #16a085;
+
+
+
+
+*/
+
+/*Empezando con el Diseño de la pagina(Etiquetas Globales)*/
+
+body{
+	background: #eaebf0;
+
+}
+nav {
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(255,255,255,1);
+    z-index: 100;
+    -webkit-box-shadow:0px 0px 20px rgba(44,44,44,.3);
+    border-bottom: 6px solid #2ecc71;
+}
+
+nav ul {
+    height: 40px;
+    width: 500px;
+    position: absolute;
+    top: 0;
+    bottom:0;
+    margin: auto 100px;
+}
+nav ul li {
+	margin-top: 5px;
+	
+    display: inline-block;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: gray;
+    font-size: 1.2em;
+    padding: 15px;
+    padding-bottom: 20px;
+    font-family: 'Roboto Slab', serif;
+}
+
+nav ul li a:hover {
+    color: #1abc9c;
+}
+nav img{
+	margin-left: 100px;
+    margin-top: 15px;
+}
+nav div#logo2 img{
+	margin-left: 300px;
+}
+
+h1::first-letter {
+    font-weight: 600;
+    color:#1abc9c;
+}
+
+
+/*Empezando con el Diseño de la pagina(Etiquetas Staticas)*/
+
+.active{
+	color: #1abc9c;
+}
+.left_contac{
+	margin-left: 75%;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #1abc9c;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 155%;
+    left: 130%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #16a085 transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+ 
+
+.content {
+    width:45%;
+    margin-top: 100px;
+    background: rgba(255,255,255,1);
+    z-index: 2;
+    border-top: 6px solid #1abc9c;
+    border-bottom: 6px solid #2ecc71;
+    -webkit-box-shadow:0px 0px 20px rgba(44,44,44,.3);
+
+}
+.content h1 {
+    font-size: 35px;
+	font-family: 'Baloo Bhai';
+    color: #464646;
+    font-weight: 600;
+    margin: 30px 60px;
+}
+.content p {
+    font-size:20px;
+    color: #2c3e50;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    margin: 30px 60px;
+    text-align: justify;
+}
+.button {
+	background:#7f8c8d;
+	color:#fff;
+	display:inline-block;
+	font-size:1.25em;
+	margin:20px;
+	padding:10px 0;
+	text-align:center;
+	width:200px;
+	text-decoration:none;
+	box-shadow:0px 3px 0px #373c3c;
+	margin-left: 350px;
+}
+ 
+.button span {
+	margin-right:10px;
+}
+
+.button.yellow {
+	background:#e67e22;
+	box-shadow:0px 3px 0px #b55704;
+}
+.icon_plan {
+    background: url(../../static/image/icons/woods.png);
+}
+
+.clearfix_iz {
+    float: left;
+}
+.clearfix_de {
+    float: right; 
+}
+
+#plan1 h1{
+	font-size: 20px;
+}
+
+#plan2 h1{
+	font-size: 20px;
+}
+
+#containerSlider{
+    height: 450px;
+    width: 100%;
+}
+
+
+#containerSlider img{
+	float: right
+}
+
+#container{
+	width: 850px;
+	margin: 0 auto;
+}
+
+
+
+#slider{
+	
+	height: 450px;
+	width: 100%;
+	margin-top: 105px;
+	overflow: hidden;
+
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	-moz-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+	-o-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Responsive Web Desing*/
+@media screen and (max-width: 480px) {
+	nav {
+    	height: 45%;
+    	width: 100%;
+    	background: rgba(255,255,255,1);
+    	z-index: 100;
+    	-webkit-box-shadow:0px 0px 20px rgba(44,44,44,.3);
+	    border-bottom: 6px solid #2ecc71;
+	}
+
+	nav ul {
+		margin-top: -2%;
+    
+	}
+	nav ul li {
+		margin-left: -30%;
+    	display: block;
+    	padding: 20px;
+    	border-bottom: 1px solid #2ecc71;
+	}
+
+    #logo{
+    	visibility: hidden;
+    }
+    
+
+}
