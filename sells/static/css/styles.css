@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 /*Tipos de letras con Google Fonts*/
 
 @import 'https://fonts.googleapis.com/css?family=Baloo+Bhai';
@@ -21,9 +26,15 @@ GREEM SEA: #16a085;
 /*Empezando con el Diseño de la pagina(Etiquetas Globales)*/
 
 body{
-	background: #eaebf0;
-
+    background: #eaebf0;
+    background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+    radial-gradient(circle closest-side, #FFFFFF 53%, rgba(52, 152, 219,0) 0) 0 0,
+    radial-gradient(circle closest-side, #FFFFFF 50%, #2ecc71 0) 55px 0 #48B;
+    background-size:110px 1200px;
+    background-repeat:repeat-x;
+font-size: 62.5%;
 }
+
 nav {
     height: 70px;
     width: 100%;
@@ -38,15 +49,16 @@ nav {
 
 nav ul {
     height: 40px;
-    width: 500px;
     position: absolute;
     top: 0;
     bottom:0;
     margin: auto 100px;
+    padding-left: 350px;
+    font-size: 1.7em;
 }
 nav ul li {
-	margin-top: 5px;
-	
+    margin-top: 5px;
+    
     display: inline-block;
 }
 
@@ -64,26 +76,26 @@ nav ul li a:hover {
     color: #1abc9c;
 }
 nav img{
-	margin-left: 100px;
+    margin-left: 100px;
     margin-top: 15px;
 }
 nav div#logo2 img{
-	margin-left: 300px;
+    margin-left: 300px;
 }
 
-h1::first-letter {
+/*h1::first-letter {
     font-weight: 600;
     color:#1abc9c;
 }
 
 
-/*Empezando con el Diseño de la pagina(Etiquetas Staticas)*/
+Empezando con el Diseño de la pagina(Etiquetas Staticas)*/
 
 .active{
-	color: #1abc9c;
+    color: #1abc9c;
 }
 .left_contac{
-	margin-left: 75%;
+    margin-left: 75%;
 }
 
 .tooltip {
@@ -137,7 +149,7 @@ h1::first-letter {
 }
 .content h1 {
     font-size: 35px;
-	font-family: 'Baloo Bhai';
+    font-family: 'Baloo Bhai';
     color: #464646;
     font-weight: 600;
     margin: 30px 60px;
@@ -151,78 +163,205 @@ h1::first-letter {
     text-align: justify;
 }
 .button {
-	background:#7f8c8d;
-	color:#fff;
-	display:inline-block;
-	font-size:1.25em;
-	margin:20px;
-	padding:10px 0;
-	text-align:center;
-	width:200px;
-	text-decoration:none;
-	box-shadow:0px 3px 0px #373c3c;
-	margin-left: 350px;
+    background:#7f8c8d;
+    color:#fff;
+    display:inline-block;
+    font-size:1.25em;
+    margin:20px;
+    padding:10px 0;
+    text-align:center;
+    width:200px;
+    text-decoration:none;
+    box-shadow:0px 3px 0px #373c3c;
+    margin-left: 350px;
 }
  
 .button span {
-	margin-right:10px;
+    margin-right:10px;
 }
 
 .button.yellow {
-	background:#e67e22;
-	box-shadow:0px 3px 0px #b55704;
-}
-.icon_plan {
-    background: url(../../static/image/icons/woods.png);
+    background:#e67e22;
+    box-shadow:0px 3px 0px #b55704;
 }
 
-.clearfix_iz {
+
+
+
+/*
+font-family: 'Baloo Bhai';
+font-family: 'Roboto Slab', serif;
+
+
+EMERALD: #2ecc71;
+TURQUOISE: #1abc9c;
+GREEM SEA: #16a085;
+*/
+
+
+
+
+.clearfix:after{
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    width: 0;
+}
+
+
+.pricing-wrapper{
+    width: 960px;
+    margin: 100px auto 20px;
+}
+.pricing-table{
     float: left;
-}
-.clearfix_de {
-    float: right; 
-}
-
-#plan1 h1{
-	font-size: 20px;
+    width: 300px;
+    margin: 0 10px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transition: all 0.25s ease;
 }
 
-#plan2 h1{
-	font-size: 20px;
+.pricing-title{
+    background: #1abc9c;
+    padding: 20px 0;
+    color: white;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+    font-size: 2em;
 }
 
-#containerSlider{
-    height: 450px;
-    width: 100%;
+.pricing-table.recomend .pricing-title, .pricing-table.recomend .primary {
+    background: #c0392b;
+
+}
+.pricing-table.recomend{
+    transform: scale(1.08);
+
+}
+.pricing-table.recomend .table-price{
+    background: #e74c3c
 }
 
+.table-price{
+    background: #27ae60;
+    padding: 20px 0;
+    font-size:  3.4em;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    font-weight: 700;
+    color: white;
 
-#containerSlider img{
-	float: right
 }
 
-#container{
-	width: 850px;
-	margin: 0 auto;
+.table-price sub{
+    font-size: 0.4em;
 }
 
-
-
-#slider{
-	
-	height: 450px;
-	width: 100%;
-	margin-top: 105px;
-	overflow: hidden;
-
-	box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
-	-moz-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
-	-webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
-	-o-box-shadow: 1px 1px 10px rgba(0,0,0,0.5);
+.pricing-list{
+    background: white;
+    color: #42403f;
+}
+.pricing-list li{
+    padding: 12px 8px;
+    font-size: 1.4em;
+    font-weight: 700;
+    list-style: none;
+}
+.pricing-list li span{
+    font-weight: 700;
+    
+}
+.ulimited{
+    background: #27ae60;
+    color: white;
+    font-size: 0.9em;
+    font-weight: 400;
+    border-radius: 38px;
+    padding: 5px 7px;
+}
+.pricing-list li:before{
+    content: '\f00c';
+    display: inline-block;
+    color: #3fab91;
+    font-size: 16px;
+    position: relative;
+    right: 6px;
+    font-family: 'FontAwesome';
+    
 }
 
+.pricing-list li:nth-child(2n){
+    background: #F0F0F0;
+}
+.table-buy{
+    overflow: hidden;
+    background: white;
+    padding: 15px;
+    text-align: left;
+}
+.table-buy p{
+    float: left;
+    color: #2b2727;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+.table-buy p sub{
+    font-size: 0.5em;
+}
+.primary{
+    background: #27ae60;
+    padding: 12px 16px;
+    border-radius: 2px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 1.4em;
+    font-weight: 700;
+    display: inline-block;
+    float: right;
 
+}
 
+.pricing-table .pricing-primary:hover{
+    background: #cf4f3e;
+}
+
+/*
+    Responsive
+
+*/
+@media screen and (min-width: 780px) and (max-width: 959px){
+    .pricing-wrapper{
+        width: 768px;
+    }
+    .pricing-table{
+        width: 236px;
+    }
+    .pricing-table li{
+        font-size: 1.3em;
+
+    }
+}
+@media screen and (max-width: 767px){
+    .pricing-wrapper{
+        width: 420px;
+    }
+    .pricing-table{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+        margin: 0;
+    }
+    .pricing-table li{
+        font-size: 1.3em;
+        
+    }
+}
+@media screen and (max-width: 479px){
+    .pricing-wrapper{
+        width: 300px;
+    }
+}
 
 
 
