@@ -29,7 +29,7 @@ body{
     background: #eaebf0;
     background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
     radial-gradient(circle closest-side, #FFFFFF 53%, rgba(52, 152, 219,0) 0) 0 0,
-    radial-gradient(circle closest-side, #FFFFFF 50%, #2ecc71 0) 55px 0 #48B;
+    radial-gradient(circle closest-side, #FFFFFF 50%, #2ecc71 0) 55px 0 #2ecc71;
     background-size:110px 1200px;
     background-repeat:repeat-x;
 font-size: 62.5%;
@@ -183,6 +183,10 @@ Empezando con el Diseño de la pagina(Etiquetas Staticas)*/
 .button.yellow {
     background:#e67e22;
     box-shadow:0px 3px 0px #b55704;
+}
+
+.mobile_menu{
+    display: none;
 }
 
 
@@ -341,8 +345,14 @@ GREEM SEA: #16a085;
         font-size: 1.3em;
 
     }
+    nav{
+        padding: 0px;
+    }
+    nav ul{
+        padding-left: 150px;
+    }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 777px){
     .pricing-wrapper{
         width: 420px;
     }
@@ -356,62 +366,122 @@ GREEM SEA: #16a085;
         font-size: 1.3em;
         
     }
+    nav ul{
+        padding-left: 100px;
+    }
+    nav ul li{
+       font-size: 0.9em;
+    }
+    
+}
+
+@media screen and (max-width: 687px){
+    .pricing-wrapper{
+        width: 420px;
+    }
+    .pricing-table{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px;
+        margin: 0;
+    }
+    .pricing-table li{
+        font-size: 1.3em;
+        
+    }
+    nav ul li{
+       font-size: 0.7em;
+    }
+   .tooltip{
+    display: none;
+   }
+   .pricing-table.recomend{
+    transform: scale(1);
+
+    }
+    
 }
 @media screen and (max-width: 479px){
     .pricing-wrapper{
         width: 300px;
     }
+   
+     #logo{
+        display: none;
+    }
+    nav{
+        display: none
+    }
+    .pricing-table.recomend{
+    transform: scale(1);
+
+    }
 }
+@media screen and (max-width: 500px){
+    .pricing-wrapper{
+        width: 200px;
+    }
+    .mobile_menu{
+        width: 100%;
+        padding: 10px 15px;
+        background: rgba(255,255,255,1);
+    z-index: 100;
+    -webkit-box-shadow:0px 0px 20px rgba(44,44,44,.3);
+    border-bottom: 6px solid #2ecc71;
+        display: inline-block;
+    }
+    .mobile_text{
+        color: gray;
+    }
+    .pricing-table.recomend{
+    transform: scale(1);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*Responsive Web Desing*/
-@media screen and (max-width: 480px) {
-	nav {
-    	height: 45%;
-    	width: 100%;
-    	background: rgba(255,255,255,1);
-    	z-index: 100;
-    	-webkit-box-shadow:0px 0px 20px rgba(44,44,44,.3);
-	    border-bottom: 6px solid #2ecc71;
-	}
-
-	nav ul {
-		margin-top: -2%;
-    
-	}
-	nav ul li {
-		margin-left: -30%;
-    	display: block;
-    	padding: 20px;
-    	border-bottom: 1px solid #2ecc71;
-	}
-
-    #logo{
-    	visibility: hidden;
     }
     
-
+    
 }
+
+@media screen and (max-width: 379px){
+    .pricing-wrapper{
+        width: 200px;
+    }
+    .mobile_menu{
+        width: 100%;
+        padding: 10px 15px;
+        background: rgba(255,255,255,1);
+    z-index: 100;
+    -webkit-box-shadow:0px 0px 20px rgba(44,44,44,.3);
+    border-bottom: 6px solid #2ecc71;
+        display: inline-block;
+    }
+    .mobile_text{
+        color: gray;
+    }
+    .pricing-table.recomend{
+    transform: scale(1);
+
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
